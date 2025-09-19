@@ -105,3 +105,11 @@ func Add(folder, memo string) (string, error) {
 	}
 	return abs, nil
 }
+
+func Load() (DB, error) {
+	return load()
+}
+
+func Save(db DB) error {
+	return save(db)
+}
