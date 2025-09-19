@@ -23,7 +23,7 @@ var showCmd = &cobra.Command{
 		if memo, ok := db[abs]; ok {
 			fmt.Printf("%s : %s\n", abs, memo)
 		} else {
-			fmt.Printf("No memo found for", abs)
+			fmt.Printf("No memo found for %s", abs)
 		}
 		return nil
 	},
